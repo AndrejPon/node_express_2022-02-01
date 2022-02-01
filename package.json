@@ -1,0 +1,22 @@
+{
+  "name": "51-paskaita---2022.02.01---node-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrejPon/node_express_2022-02-01.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "A.P.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrejPon/node_express_2022-02-01/issues"
+  },
+  "homepage": "https://github.com/AndrejPon/node_express_2022-02-01#readme"
+}
