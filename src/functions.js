@@ -1,25 +1,26 @@
-function makeCamelCase(str){
-// console.log(str);
-const arrFromString = str.split('');
-// console.log('arrFromString ===', arrFromString);
-const arrayAfterProcess = [];
-arrFromString.forEach((element, idx, arr) => {
-if (element !== ' ') {
-    arrayAfterProcess.push(element);
-}   else {
-    arr[idx + 1] = arr[idx + 1].toUpperCase();
-}
-});
-arrayAfterProcess[0] = arrayAfterProcess[0].toLowerCase();
-//  jeigu pakeisim i UperCase gausim Pascale Case
-
-const stringFromArr = arrayAfterProcess.join('');
-// console.log('arrFromString ===', stringFromArr);
-return stringFromArr;
-}
-
-// makeCamelCase('Ar veikia camel casesas?');
-
-module.exports = {
+function makeCamelCase(str) {
+    // console.log(str);
+    const arrFromString = str.split('');
+    // console.log('arrFromString ===', arrFromString);
+    const arrayAfterProccess = [];
+    arrFromString.forEach((element, idx, arr) => {
+      if (element !== ' ') {
+        arrayAfterProccess.push(element);
+      } else {
+        // padaryti kita raide didziaja
+        arr[idx + 1] = arr[idx + 1].toUpperCase();
+      }
+    });
+    // pamazinti pirmos raides case
+    arrayAfterProccess[0] = arrayAfterProccess[0].toLowerCase();
+    const stringFromArr = arrayAfterProccess.join('');
+    // console.log('stringFromArr ===', stringFromArr);
+    return stringFromArr;
+  }
+  
+//   makeCamelCase('Ar veikia kupranugario case?');
+  console.log(makeCamelCase('Ar veikia kupranugario case?'));
+  
+  module.exports = {
     makeCamelCase,
-};
+  };
